@@ -1,14 +1,14 @@
 {
-	"incitems" : [
+	"Spawns" : [
 	{
-		"abr": "tornado",
-		"price": 1600,
-		"karmatype": "Bad"
+		"abr": "spawn_normal",
+		"price": 25,
+		"Description": "Spawns Normal Zombie"
 	},
 	{
-		"abr": "tornados",
-		"price": 4500,
-		"karmatype": "Bad"
+		"abr": "spawn_crawler",
+		"price": 20,
+		"Description": "Spawns a Crawler Zombie"
 	},
 	{
 		"abr": "clearweather",
