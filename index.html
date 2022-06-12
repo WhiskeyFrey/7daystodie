@@ -18,7 +18,7 @@ title: Store
 {%- assign eventsForDisplay = site.data.StoreIncidents.incitems | where_exp: "incident", "incident.price > 0" | sort: "abr" -%}
 {%- assign animalsForDisplay = site.data.StoreItems.items | where: "category", "Animal" | where_exp: "animal", "animal.price > 0" | sort: "abr" -%}
 {%- assign traitsForDisplay = '' | split: ',' -%}
-{%- assign kindsForDisplay = site.data.Special.races | where: "enabled", "true" | sort: "name" -%}
+{%- assign kindsForDisplay = site.data.ShopeExt.races | where: "enabled", "true" | sort: "name" -%}
 {%- assign weaponsForDisplay = '' | split: ',' -%}
 
 {%- for item in site.data.StoreItems.items -%}
@@ -42,7 +42,7 @@ title: Store
     {%- endif -%}
 {%- endfor -%}
 
-{%- for trait in site.data.Special.traits -%}
+{%- for trait in site.data.ShopExt.traits -%}
     {%- if trait.canAdd == true or trait.canRemove == true -%}
         {%- assign traitsForDisplay = traitsForDisplay | push: trait | sort: "name" -%}
     {%- endif -%}
